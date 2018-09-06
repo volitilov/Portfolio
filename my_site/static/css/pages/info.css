@@ -1,0 +1,64 @@
+.info {
+  padding: 10px;
+}
+.info .wraper {
+  padding: 20px;
+}
+.info h4 {
+  font-weight: 400;
+  color: #666;
+}
+.info .widjet-tree li {
+  list-style: none;
+  padding: 5px 0;
+}
+.info .dropdown-togle {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.info .widjet-tree .dropdown-togle ul {
+  padding-left: 0px;
+}
+.info .widjet-tree .dropdown-togle ul li {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 3px;
+  list-style: decimal;
+}
+@media (min-width: 591px) {
+  .info {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .info .wraper {
+    padding: 50px;
+  }
+  .info .widjet-tree .dropdown-togle ul {
+    padding-left: 15px;
+  }
+  .info .dropdown-togle {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .info {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 984px) {
+  
+}
+@media (min-width: 1068px) {
+  .info {
+    padding-left: 95px;
+    padding-right: 100px;
+  }
+  .info .wraper {
+    padding: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

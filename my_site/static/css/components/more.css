@@ -1,0 +1,37 @@
+.more {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0px;
+}
+.more h4 {
+	margin: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.more figure {
+	padding: 0;
+	overflow: hidden;
+}
+.more figure img {
+	border: 1px solid #eee;
+	border-radius: 3px;
+	border-bottom: 0;
+	display: block;
+	width: 100%;
+	box-shadow: #000 0 0 0;
+}
+.more figcaption {
+	text-align: center;
+	border: 1px solid #eee;
+	padding: 20px;
+}
+.more figcaption a {
+	display: block;
+	font-size: 13px;
+	font-weight: 500;
+	color: #666;
+
+}
+.more figcaption a:hover {
+	text-decoration: underline !important;
+}

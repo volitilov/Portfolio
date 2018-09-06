@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<li class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+	<div class="col-xs-12 wraper">
+		<figure>
+			<a href="{% url 'work' pk=w.pk %}" title="look {{ w.title }}" rel="bookmark">
+				<img src="{{ w.img_small.url }}"/>
+			</a>
+			<figcaption>
+				<h2>{{ w.title }}</h2>
+				<a href="{% url 'work' pk=w.pk %}" title="look {{ w.title }}" rel="bookmark">Подробнее</a>
+			</figcaption>
+		</figure>
+	</div>
+</li>

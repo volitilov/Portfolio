@@ -1,0 +1,29 @@
+{% load static %}
+{% load staticfiles %}
+<header>
+	<nav class="navbar head">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<i class="fa fa-bars"></i>
+			</button>
+			<a href="/" title="Back to home">
+				<hgroup>
+					<span><img src="{% static 'img/foto.jpg' %}"/></span>
+					<span>
+						<h3>Pythman</h3>
+						<h4>Веб разработка</h4>
+					</span>
+				</hgroup>
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<menu class="nav navbar-nav navbar-right">
+				<li><a href="/">Портфолио</a></li>
+				<li><a href="{% url 'about' %}">Обо мне</a></li>
+				<li><a href="{% url 'info' %}">Информация</a></li>
+				<li><a href="{% url 'services' %}" class="btn-blue-light">Услуги</a></li>
+				<li><a href="{% url 'contacts' %}" class="btn-blue">Контакты</a></li>
+			</menu>
+		</div>
+	</nav>
+</header><!-- /header -->

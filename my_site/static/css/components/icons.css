@@ -1,0 +1,27 @@
+.icon {
+  padding-bottom: 30px;
+  border-radius: 10%;
+  border-bottom: 1px solid #ddd;
+}
+.icon a {
+  transition: all 0.3s;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #888888;
+  border-radius: 50%;
+  padding-top: 10px;
+  margin: 5px;
+  text-align: center;
+}
+.icon a:hover {
+  border-color: #02a8f3;
+}
+.icon a:hover i {
+  color: #02a8f3;
+}
+.icon i {
+  transition: all 0.3s;
+  font-size: 17px;
+  color: #888888;
+}

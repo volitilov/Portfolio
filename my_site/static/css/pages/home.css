@@ -1,0 +1,17 @@
+.home {
+  padding: 10px;
+}
+.home ul {
+	overflow: hidden;
+}
+@media (min-width: 1068px) {
+  .home {
+    padding: 90px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+article {
+	overflow: hidden;
+}

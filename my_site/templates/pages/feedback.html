@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<nav class="col-xs-12 page-header">
+		<h4>Обратная связь</h4>
+		<ul class="site-breadcrumbs">
+			<li><a href="/">Главная</a></li>
+			<li><i class="fa fa-angle-right"></i></li>
+			<li>Обратная связь</li>
+		</ul>
+	</nav>
+	<section class="col-xs-12 feedback">
+		<div class="col-xs-12 wraper">
+			<p>Привет <font color="#22ACF5">{{ name|linebreaksbr }}</font>, твоё письмо полученно и будет просмотренно в ближайшее время,<br> если моего письма долго нету проверь папку спам.</p>
+			<p>А вообще я постоянно на всязи тут:</p>
+			<div class="col-xs-12 icon">
+				<a href="https://vk.com/volitilov" title="vk" target="_blank"><i class="fa fa-vk"></i></a>
+				<a href="https://www.facebook.com/volitilov" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="#" title="google-plus"><i class="fa fa-google-plus"></i></a>
+				<a href="https://ok.ru/profile/567774078600" title="odnoklassniki" target="_blank"><i class="fa fa-odnoklassniki"></i></a>
+				<a href="https://twitter.com/_volitilov_?lang=ru" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+	</section>
+{% endblock content %}

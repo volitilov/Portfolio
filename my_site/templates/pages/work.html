@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<nav class="col-md-12 page-header">
+	<h4>{{ work.title }}</h4>
+	<ul class="site-breadcrumbs">
+		<li><a href="/">Главная</a></li>
+		<li><i class="fa fa-angle-right"></i></li>
+		<li>{{ work.title|slice:':20' }}...</li>
+	</ul>
+</nav>
+<section class="col-xs-12 work">
+	<article class="col-xs-12 col-sm-8 animated bounceInLeft">
+		<div class="work-image-wrapper">
+			<img src="{{ work.img_big.url }}"/>
+		</div>
+	</article>
+	<aside>
+		<div class="col-xs-12 col-sm-4 animated bounceInRight">
+			<div class="work-meta">
+				<div class="work-meta-item">
+					<h5>Дата публикации:</h5>
+					<time pubdate>{{ work.published_date }}</time>
+				</div>
+				<div class="work-meta-item">
+					<h5>Название:</h5>
+					<p><strong>{{ work.title }}</strong></p>
+				</div>
+				<div class="work-meta-item">
+					<h5>Описание:</h5>
+					<p>{{ work.description }}</p>
+				</div>
+				<div class="work-meta-item">
+					<h5>Технологии:</h5>
+					<ul class="tags">
+						{% for category in work.category.all %}
+							<li>{{ category }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				
+				<div class="freebie-btn">
+					<ul>
+						<!-- <li><a class="btn-blue-light" href="{{ work.download }}">
+							<span>Скачать</span>
+						</a></li> -->
+
+						<li><a class="btn-blue" href="{{  work.project_url }}" target="_blank">
+							<span>Посмотреть</span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</aside>
+	{% include 'components/_more.html' %}
+</section>
+{% endblock %}

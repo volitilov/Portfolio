@@ -1,0 +1,75 @@
+.services {
+  padding: 10px;
+}
+.services .wraper {
+  padding: 10px;
+}
+.services ol,
+.services ul {
+  padding-left: 10px;
+}
+.services ol li,
+.services ul li {
+  padding: 3px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+}
+.services .dop-info, .dop-info2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.services .wt1 li {
+  list-style: none;
+  padding: 12px 0px;
+  border-bottom: 1px solid #eee;
+}
+.services .wt1 .dropdown-togle span {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.services .wt1 .dropdown-togle span:last-child {
+  width: 100%;
+  color: green;
+}
+.services .wt2 ul {
+  list-style: decimal;
+}
+@media (min-width: 591px) {
+  .services .wraper {
+    padding: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .services {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 984px) {
+  
+}
+@media (min-width: 1068px) {
+  .services {
+    padding-left: 95px;
+    padding-right: 100px;
+  }
+
+}
+@media (min-width: 1150px) {
+  .services ol,
+  .services ul {
+    padding-left: 30px;
+  }
+  .services .wt1 .dropdown-togle span {
+    width: 78%;
+  }
+  .services .wt1 .dropdown-togle span:last-child {
+    border-left: 1px solid #eee;
+    width: 20%;
+    padding-left: 10px;
+  }
+}

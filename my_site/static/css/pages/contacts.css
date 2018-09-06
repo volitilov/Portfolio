@@ -1,0 +1,103 @@
+.contacts {
+  padding: 10px;
+}
+.contacts .icon {
+  margin-bottom: 50px;
+}
+.contacts .form-contacts {
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.15);
+}
+.contacts .form-contacts form {
+  width: 100%;
+  text-align: center;
+}
+.contacts .form-contacts form input {
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  background-color: transparent !important;
+  padding-left: 20px;
+  width: 94%;
+  height: 35px;
+  margin: 7px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: 3px solid #888888;
+}
+.contacts .form-contacts form input:focus {
+  color: #02a8f3;
+  border-radius: 6px;
+  border: 3px solid #02a8f3;
+  -webkit-appearance: caps-lock-indicator;
+  outline: none;
+}
+.contacts .form-contacts form label {
+  display: block;
+  color: #999;
+  font-size: 13px;
+}
+.contacts .form-contacts form textarea {
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  background-color: transparent !important;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  border: 3px solid #888888;
+}
+.contacts .form-contacts form textarea:focus {
+  color: #02a8f3;
+  border-radius: 6px;
+  border: 3px solid #02a8f3;
+  -webkit-appearance: caps-lock-indicator;
+  outline: none;
+}
+.contacts .form-contacts form input::-webkit-input-placeholder,
+.contacts .form-contacts form textarea::-webkit-input-placeholder {
+  color: #o2a8f3;
+}
+.contacts .form-contacts form input::-webkit-outer-spin-button,
+.contacts .form-contacts form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contacts .form-contacts form button {
+  margin-top: 30px;
+  border: none;
+}
+@media (min-width: 591px) {
+  .contacts .form-contacts {
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .contacts .form-contacts form input {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 984px) {
+  
+}
+@media (min-width: 1068px) {
+  .contacts {
+    padding-left: 90px;
+    padding-right: 100px;
+  }
+  .contacts .form-contacts {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
