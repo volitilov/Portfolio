@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block style %}
+    <link href="{% static 'css/pages/backend.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+{% block content %}
+	<nav class="col-xs-12 page-header">
+		<h4>Backend</h4>
+		<ul class="site-breadcrumbs">
+			<li><a href="/">Главная</a></li>
+			<li><i class="fa fa-angle-right"></i></li>
+			<li>Backend</li>
+		</ul>
+	</nav>
+	<section class="col-xs-12 services backend">
+            <div class="col-xs-12 wraper">
+                <div class="col-xs-12">
+                    <h4>На данный момент я могу предоставить только данную информацию.</h4>
+                    <div class="widjet-tree wt1">
+                        <div class="tree dropdown">
+                            <a href="#">
+                                <span><i class="fa fa-angle-down"></i></span>
+                                <span>Написал бэкенда для соц. блогинга</span>
+                            </a>
+                            <div class="dropdown-togle">
+                                <ul>
+                                    <li>
+                                        <h5>Назначение</h5>
+                                        <p>Сервис позволяет пользователям вести свою собственную ленту
+                                            публикаций, иметь собственных подписчиков, рейтинг.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Функциональность</h5>
+                                        <p>Предоставляет возможность авторам модерировать комментарии
+                                            написанные к их публикация. Пользователь имеет следующие настройки:
+                                            настройки аккаунта, профиля, уведомлений.
+                                            Ресур имеет полнотектовый поиск, поиск по тегам, сортировку по параметрам.
+                                            Для разработчиков предусмотрена возможность написание кода с 
+                                            подсветкой синтексиса, реализована поддержка API и мн. др.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Применяемые технологии</h5>
+                                        <ul class="tags">
+                                            <li>Elasticksearch</li>
+                                            <li>Flask</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Ajax</li>
+                                            <li>Jinja2</li>
+                                            <li>Primer</li>
+                                            <li>SQLAlchemy</li>
+                                            <li>Markdown</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Моё участие</h5>
+                                        <p>Делал всё полностью.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Состояние</h5>
+                                        <p>Ресурс был тщательно протестирован.</p>
+                                        <ul class="ul">
+                                            <li>Код можно посмотреть <a href="https://github.com/volitilov/flask_microblog" target="_blank">сдесь</a></li>
+                                            <li>Сам ресурс пожно попробывать <a href="https://fh.com" target="_blank">сдесь</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Планы</h5>
+                                        <p>В планы входит наращивание функциональности, оптимизация, монитизация проекта.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tree dropdown">
+                            <a href="#">
+                                <span><i class="fa fa-angle-down"></i></span>
+                                <span>Написал бэкенда для ресурса по скачиванию книг по программированию</span>
+                            </a>
+                            <div class="dropdown-togle">
+                                <ul>
+                                    <li>
+                                        <h5>Назначение</h5>
+                                        <p>Сервис позволяет пользователям скачивать книги по программированию.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Функциональность</h5>
+                                        <p>По функционалу ничего особенного поиск книг по категориям, авторизация
+                                        с помощью соц.сетей.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Применяемые технологии</h5>
+                                        <ul class="tags">
+                                            <li>Django</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Ajax</li>
+                                            <li>Jinja2</li>
+                                            <li>SQLAlchemy</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Моё участие</h5>
+                                        <p>Делал всё полностью.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Состояние</h5>
+                                        <p>На данный момент на доработке.</p>
+                                        <ul class="ul">
+                                            <li>Код можно посмотреть <a href="https://github.com/volitilov/bookingem" target="_blank">сдесь</a></li>
+                                            <li>Сам ресурс пожно попробывать <a href="#" target="_blank">сдесь</a></li>
+                                        </ul>
+                                        <p>В планы входит наращивание функциональности, оптимизация, монитизация проекта.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tree dropdown">
+                            <a href="#">
+                                <span><i class="fa fa-angle-down"></i></span>
+                                <span>Написал бэкенда для данного ресурса</span>
+                            </a>
+                            <div class="dropdown-togle">
+                                <ul>
+                                    <li>
+                                        <h5>Назначение</h5>
+                                        <p>Ресурс помогает решить вопросы по взоимодействию с клиентами 
+                                            в фрилансерской деятельности. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Функциональность</h5>
+                                        <p>Возможность публиковать свои работы, взоимодействие с заказчиком</p>
+                                    </li>
+                                    <li>
+                                        <h5>Применяемые технологии</h5>
+                                        <ul class="tags">
+                                            <li>Django</li>
+                                            <li>PostgreSQL</li>
+                                            <li>Ajax</li>
+                                            <li>Jinja2</li>
+                                            <li>SQLAlchemy</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Моё участие</h5>
+                                        <p>Делал всё полностью.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Состояние</h5>
+                                        <p>На данный момент активно развивается.</p>
+                                        <ul class="ul">
+                                            <li>Код можно посмотреть <a href="https://github.com/volitilov/portfolio" target="_blank">сдесь</a></li>
+                                            <li>Сам ресурс пожно попробывать <a href="#" target="_blank">сдесь</a></li>
+                                        </ul>
+                                        <p>В планы входит наращивание функциональности, оптимизация, монитизация проекта.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+{% endblock %}

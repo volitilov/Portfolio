@@ -1,8 +1,14 @@
+# my_site/models.py
+
+#
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 from django.db import models
 from django.utils import timezone
 from django.conf import settings
 
-
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 class Category(models.Model):
 	class Meta:

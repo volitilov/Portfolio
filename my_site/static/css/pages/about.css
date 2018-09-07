@@ -1,10 +1,11 @@
 .about {
   padding: 10px;
 }
-.about h5 {
-  color: #02a8f3;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+.about .dropdown-togle {
+  padding-left: 30px;
+}
+.about .dropdown-togle .tags {
+  padding-left: 0;
 }
 .about .about-content {
   border-radius: 6px;
@@ -50,21 +51,9 @@
   margin: 3px;
   list-style: disc;
 }
-.about .about-me-big .tags li {
-  display: inline-block;
-  list-style: none;
-  text-transform: uppercase;
-  font-size: 13px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 8px 13px;
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.5);
-}
 @media (min-width: 591px) {
   .about .about-me-big .ul {
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
 @media (min-width: 768px) {

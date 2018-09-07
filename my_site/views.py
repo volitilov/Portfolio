@@ -1,58 +1,76 @@
+# my_site/views.py
+
+#
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 from django.template.context_processors import csrf
 from django.shortcuts import render, get_object_or_404
 
 from .models import PortfolioItem, Category
 from .forms import ContactsForm
 
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+def about_page(request):
+    return render(request, 'pages/about.html', {
+        'categories': Category.objects.all()
+    })
 
 
-# About page :::::::::::::::::::::::::::::::::::::::::::::
-def about(request):
-	categories = Category.objects.all()
-	return render(request, 'pages/about.html', {'categories': categories})
+def home_page(request):
+    return render(request, 'pages/index.html', {
+        'title': 'Home page'
+    })
 
 
-# Home page :::::::::::::::::::::::::::::::::::::::::
-def home(request):
-	data = {
-		'works': PortfolioItem.objects.all(),
-	}
-	
-	return render(request, 'pages/index.html', data)
+def frontend_page(request):
+    return render(request, 'pages/frontend.html', {
+        'title': 'Portfolio frontend page',
+        'works': PortfolioItem.objects.all()
+    })
 
 
-# Info page ::::::::::::::::::::::::::::::::::::::::::::::
-def info(request):
-	return render(request, 'pages/info.html', {})
+def backend_page(request):
+    return render(request, 'pages/backend.html', {
+        'title': 'Portfolio backend page'
+    })
 
 
-# Services page ::::::::::::::::::::::::::::::::::::::::::
-def services(request):
-	return render(request, 'pages/services.html', {})
+def other_page(request):
+    return render(request, 'pages/other.html', {
+        'title': 'Portfolio other page'
+    })
 
 
-# Contacts page ::::::::::::::::::::::::::::::::::::::::::
-def contacts(request):
-	args = {}
-	args.update(csrf(request))
-	args['form'] = ContactsForm
+def info_page(request):
+    return render(request, 'pages/info.html', {})
 
-	if request.POST:
-		form = ContactsForm(request.POST)
-		if form.is_valid():
-			form.save()
-			return render(request, 'pages/feedback.html', { 'name': form.cleaned_data['name'] })
-	else:
-		form = ContactsForm()
-		return render(request, 'pages/contacts.html', args)
+
+def services_page(request):
+    return render(request, 'pages/services.html', {})
 
 
 
-# Work page ::::::::::::::::::::::::::::::::::::::::::::::
-def work(request, pk):
-	data = {
-		'works': PortfolioItem.objects.all(),
-		'work': get_object_or_404(PortfolioItem, pk=pk)
-	}
+def contacts_page(request):
+    args = {}
+    args.update(csrf(request))
+    args['form'] = ContactsForm
 
-	return render(request, 'pages/work.html', data)
+    if request.POST:
+        form = ContactsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'pages/feedback.html', { 'name': form.cleaned_data['name'] })
+    else:
+        form = ContactsForm()
+        return render(request, 'pages/contacts.html', args)
+
+
+
+
+def work_page(request, pk):
+    return render(request, 'pages/work.html', {
+        'works': PortfolioItem.objects.all(),
+        'work': get_object_or_404(PortfolioItem, pk=pk)
+    })

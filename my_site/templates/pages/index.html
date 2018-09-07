@@ -1,19 +1,48 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
 {% block content %}
-	<nav class="col-md-12 page-header">
-		<h4>Портфолио</h4>
-		<ul class="site-breadcrumbs">
-			<li>Портфолио</li>
-		</ul>
-	</nav>
 	<section class="col-xs-12 home">
 		<article>
 			<ul>
-				{% for w in works %}
-				    {% include 'components/_portfolio-item.html' %}
-				{% endfor %}
+				<li class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+					<div class="col-xs-12 wraper">
+						<figure>
+							<a href="{% url 'backend' %}" title="backend" target="_blank">
+
+							</a>
+							<figcaption>
+								<a class="btn-blue" href="{% url 'backend' %}" title="backend">Backend</a>
+							</figcaption>
+						</figure>
+					</div>
+				</li>
+				<li class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+					<div class="col-xs-12 wraper">
+						<figure>
+							<a href="{% url 'frontend' %}" title="backend" target="_blank">
+								<img src="{% static 'img/dribbble.gif' %}"/>
+							</a>
+							<figcaption>
+								<a class="btn-blue" href="{% url 'frontend' %}" title="frontend" rel="bookmark">Frontend</a>
+							</figcaption>
+						</figure>
+					</div>
+				</li>
+				<li class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+					<div class="col-xs-12 wraper">
+						<figure>
+							<a href="#" title="backend" target="_blank">
+							
+							</a>
+							<figcaption>
+								<a class="btn-blue" href="{% url 'other' %}" title="other" rel="bookmark">Другое</a>
+							</figcaption>
+						</figure>
+					</div>
+				</li>
 			</ul>
 		</article>
 	</section>

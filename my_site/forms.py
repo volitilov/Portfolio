@@ -1,6 +1,13 @@
+# my_site/forms.py
+
+#
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 from django import forms
 from .models import Mesage
 
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 class ContactsForm(forms.ModelForm):
 	class Meta:
