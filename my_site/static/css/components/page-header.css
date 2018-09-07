@@ -11,6 +11,9 @@
 	font-weight: 500;
 	color: #666;
 }
+.page-header i {
+	font-size: 12px;
+}
 .page-header p {
 	font-size: 14px;
 	color: #666;

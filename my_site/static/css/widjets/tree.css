@@ -3,7 +3,8 @@
   font-size: 14px;
 }
 .widjet-tree i {
-  font-size: 25px;
+  font-size: 18px;
+  margin-top: 3px;
 }
 .widjet-tree span:first-child {
   transition: 0.3s;
