@@ -4,6 +4,10 @@
 .home ul {
 	overflow: hidden;
 }
+.home figcaption a {
+  color: #666;
+  background: #fff;
+}
 @media (min-width: 1068px) {
   .home {
     padding: 90px;
