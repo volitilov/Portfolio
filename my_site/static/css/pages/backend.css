@@ -1,0 +1,18 @@
+.backend .tags {
+    padding-left: 0;
+}
+.backend .tags li {
+    padding: 8px 13px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+.backend .dropdown-togle li a {
+    display: inline-block;
+}
+.backend .ul li {
+    margin: 3px;
+    list-style: disc;
+    border: none;
+    padding: 5px;
+    padding-left: 12px;
+}

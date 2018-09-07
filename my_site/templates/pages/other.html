@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block style %}
+    <link href="{% static 'css/pages/backend.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+{% block content %}
+	<nav class="col-xs-12 page-header">
+		<h4>Other</h4>
+		<ul class="site-breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><i class="fa fa-angle-right"></i></li>
+			<li>Other</li>
+		</ul>
+	</nav>
+	<section class="col-xs-12 services backend">
+            <div class="col-xs-12 wraper">
+                <div class="col-xs-12">
+                    <h4>На данный момент я могу предоставить только данную информацию.</h4>
+                    <div class="widjet-tree wt1">
+                        <div class="tree dropdown">
+                            <a href="#">
+                                <span><i class="fa fa-angle-down"></i></span>
+                                <span>Flamoon (pip package)</span>
+                            </a>
+                            <div class="dropdown-togle">
+                                <ul>
+                                    <li>
+                                        <h5>Назначение</h5>
+                                        <p>Сервис позволяет Flask-разработчикам быстро стартовать, беря на
+                                            себя работу по первоначальной конфигурации данных и архитектуры.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Функциональность</h5>
+                                        <p>Стартовый набор консольных комманд для тестирования, профилирования,
+                                            coverage тестирования, запуск, миграции, shell с настроенным контекстом.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Применяемые технологии</h5>
+                                        <ul class="tags">
+                                            <li>Python 3.5</li>
+                                            <li>pyautogui</li>
+                                            <li>requests</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Моё участие</h5>
+                                        <p>Делал всё полностью.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Состояние</h5>
+                                        <p>Сервис уже имеет стабильную первую версии, успешно проходит CI.</p>
+                                        <ul class="ul">
+                                            <li>Код можно посмотреть <a href="https://github.com/volitilov/flamoon" target="_blank">сдесь</a></li>
+                                            <li>Подробнее можно посмотреть <a href="https://pypi.org/project/flamoon/" target="_blank">сдесь</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Планы</h5>
+                                        <p>В планы входит наращивание функциональности.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tree dropdown">
+                            <a href="#">
+                                <span><i class="fa fa-angle-down"></i></span>
+                                <span>Python scripts</span>
+                            </a>
+                            <div class="dropdown-togle">
+                                <ul>
+                                    <li>Мелкие консольные програмки можно посмотреть <a href="https://github.com/volitilov/Python_learn/tree/master/programs/small_prog">сдесь</a>.</li>
+                                    <li>Консольный скрипт который ведёт учёт прихода и ухода сотрудников <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/work_tbl/work_tbl.py">сдесь</a>.</li>
+                                    <li>Консольный скрипт поиска больших файлов в дереве коталогов <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/top_size_file/top_size_file.py">сдесь</a>.</li>
+                                    <li>Консольный скрипт который рассылает сообщения на основании сведений из электронной 
+                                        таблицы об уплате взносов <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/send_dues_reminders/send_dues_reminders.py">сдесь</a>.</li>
+                                    <li>Проrрамма с rрафическим пользовательским интерфейсом, предназначенная 
+                                        для навиrации по файловой системе <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/listdir/listdir.py">сдесь</a></li>
+                                    <li>Консольный скрипт для загрузки файлов из интернета по протаколу FTTP <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/ftp_downloader/ftp_downloader.py">сдесь</a></li>
+                                    <li>Консольный скрипт который загружает заданное кол-во комиксов с сайта https://xkcd.com
+                                        с использованием многопоточной загрузки <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/download_xkcd/download_xkcd.py">сдесь</a>.</li>
+                                    <li>Консольный скрипт который выполняет обход дерева коталогов с целью отбора и 
+                                        копирования файлов с заданным расширением <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/copy_files/copy_files.py">сдесь</a>ю</li>
+                                    <li>Консольный скрипт который копирует папку вместе со всем её содержимым в ZIP-файл с 
+                                        инкреминтируемым номером копии в имени файла <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/backup_to_zip/backupToZip.py">сдесь</a>.</li>
+                                    <li>Консольная утилита которая навешивает логотип на все изображения в коталоге <a href="https://github.com/volitilov/Python_learn/blob/master/programs/medium_prog/add_logo/add_logo.py">сдесь</a></li>
+                                    <li>Консольные скрипты позволяющие переписываться по протаколам TCP/IP <a href="https://github.com/volitilov/Python_learn/tree/master/programs/big_prog/ex_socket">сдесь</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tree dropdown">
+                            <a href="#">
+                                <span><i class="fa fa-angle-down"></i></span>
+                                <span>Другое</span>
+                            </a>
+                            <div class="dropdown-togle">
+                                <ul>
+                                    <li>Много кода можно найти <a href="https://github.com/volitilov?page=2&tab=repositories">сдесь</a></li>
+                                    <li>React компоненты для фронтенда <a href="https://codepen.io/collection/npRgxw/">сдесь</a>.</li>
+                                    <li>JQuery компоненты для фронтенда <a href="https://codepen.io/collection/XQdyJr/">сдесь</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+{% endblock %}

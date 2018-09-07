@@ -4,6 +4,9 @@
 .services .wraper {
   padding: 10px;
 }
+.services .wraper h4 {
+  margin-bottom: 25px;
+}
 .services ol,
 .services ul {
   padding-left: 10px;

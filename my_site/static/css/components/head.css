@@ -54,7 +54,7 @@
   padding-right: 20px;
 }
 .head .navbar-header {
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .head .navbar-header button {
   float: right;
@@ -65,16 +65,18 @@
   transition: 0.3s;
   border-radius: 50%;
   border: 3px solid #22ACF5;
-  width: 65px;
+  width: 50px;
 }
-.head .navbar-header a h3,
-.head .navbar-header a h4 {
+.head .navbar-header a h3 {
   color: #22ACF5;
+  font-size: 18px;
 }
 .head .navbar-header a h4 {
   font-size: 10px;
   margin-left: 10px;
+  margin-top: 5px;
   font-weight: normal;
+  color: #666;
 }
 .head .navbar-header a h3 {
   padding: 0px;
@@ -148,7 +150,15 @@
 }
 @media (min-width: 1068px) {
   .head {
+    height: 70px;
     padding-left: 80px;
     padding-right: 70px;
+  }
+  .head .navbar-collapse a {
+    margin-top: -6px;
+  }
+  .head .navbar-right .btn-blue,
+  .head .navbar-right .btn-blue-light {
+    margin-top: 0;
   }
 }

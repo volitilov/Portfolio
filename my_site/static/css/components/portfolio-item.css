@@ -28,25 +28,3 @@
 .portfolio-item figure a {
 	display: block;
 }
-.portfolio-item figcaption a {
-	transition: .2s;
-	font-family: inherit;
-	font-size: 15px;
-	font-style: inherit;
-	font-weight: inherit;
-	color: #666;
-	background: #fff;
-	// box-shadow: 0 0.55556rem 1.11111rem -0.27778rem rgba(0,0,0,0.15);
-	box-shadow: 0 1px 5px -1px rgba(0,0,0,.15);
-	padding: 12px 20px;
-	margin: 0 5px 5px 0;
-	display: inline-block;
-	border-radius: 3px;
-	text-shadow: none;
-	outline: 0;
-	-webkit-appearance: none;
-}
-.portfolio-item figcaption a:hover {
-	color: #fff;
-	text-decoration: none;
-}
