@@ -9,6 +9,17 @@
   background: #fff;
   box-shadow: 0 0.15556rem 1.11111rem -0.27778rem rgba(0,0,0,0.15);
 }
+.home .wraper {
+  text-align: center;
+}
+.home .wraper figure > a p {
+  /* color: #666; */
+}
+.home .wraper figure > a {
+  padding: 20px 0;
+  font-size: 50px;
+  font-weight: bold;
+}
 @media (min-width: 1068px) {
   .home {
     padding: 90px;
