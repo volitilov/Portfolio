@@ -6,6 +6,7 @@
 
 from django.template.context_processors import csrf
 from django.shortcuts import render, get_object_or_404
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 from .models import PortfolioItem, Category
 from .forms import ContactsForm
@@ -25,9 +26,14 @@ def home_page(request):
 
 
 def frontend_page(request):
+    works = PortfolioItem.objects.all()
+    paginator = Paginator(works, 6) # Show 6 works per page
+    page = request.GET.get('page')
+    works = paginator.get_page(page)
+
     return render(request, 'pages/frontend.html', {
         'title': 'Portfolio frontend page',
-        'works': PortfolioItem.objects.all()
+        'works': works
     })
 
 

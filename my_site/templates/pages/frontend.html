@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% block style %} 
+	<link href="{% static 'css/components/pagination.css' %}" rel="stylesheet"/>
+	<link href="{% static 'css/pages/frontend.css' %}" rel="stylesheet"/>
+{% endblock %}
 
 <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
@@ -12,7 +16,7 @@
 			<li>Frontend</li>
 		</ul>
 	</nav>
-	<section class="col-xs-12 home">
+	<section class="col-xs-12 frontend">
 		<article>
 			<ul>
                 {% for w in works %}
@@ -20,5 +24,23 @@
                 {% endfor %}
 			</ul>
 		</article>
+		<div class="pagination">
+			<ul>
+				{% if works.has_previous %}
+					<li><a class="next" href="?page={{ works.previous_page_number }}">предыдущая</a></li>
+					<li><a href="?page=1">1</a></li>
+					<li class="current"><a>...</a></li>
+				{% endif %}
+				{% if works.paginator.num_pages != 1 %}
+					<li class="current"><a>{{ works.number }}</a></li>
+				{% endif %}
+				{% if works.has_next %}
+					<li class="current"><a>...</a></li>
+					<li><a href="?page={{ works.paginator.num_pages }}">{{ works.paginator.num_pages }}</a></li>
+					<li><a class="next" href="?page={{ works.next_page_number }}">следующая</a></li>
+				{% endif %}
+			</ul>
+				
+		</div>
 	</section>
 {% endblock %}
